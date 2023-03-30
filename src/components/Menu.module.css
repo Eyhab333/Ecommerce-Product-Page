@@ -1,0 +1,53 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67%;
+  max-width: 23rem;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  text-align: left;
+}
+
+.container img {
+  cursor: pointer;
+}
+
+.container ul {
+  color: hsl(220, 13%, 13%);
+  font-size: 1.15rem;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.container ul > * {
+  cursor: pointer;
+}
+
+@media (min-width: 56.25rem) {
+  .backdrop,
+  .container {
+    display: none;
+  }
+}

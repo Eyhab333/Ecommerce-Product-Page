@@ -1,0 +1,165 @@
+.container {
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
+  max-width: 28rem;
+  margin: auto;
+}
+
+h2 {
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.9rem;
+}
+
+h1 {
+  color: hsl(220, 13%, 13%);
+  font-size: 1.8rem;
+  margin-bottom: 0.9rem;
+}
+
+p {
+  font-size: 0.94rem;
+  color: hsl(219, 9%, 45%);
+  line-height: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  color: hsl(220, 13%, 13%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.percentage {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.previous {
+  color: hsl(220, 14%, 75%);
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.counter {
+  background-color: hsl(223, 64%, 98%);
+  height: 3.5rem;
+  border-radius: 0.6rem;
+  padding-inline: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.counter > div {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.counter > span {
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+}
+
+.action {
+  background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  height: 3.5rem;
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(255, 125, 26, 0.3);
+}
+
+.action:active {
+  transform-origin: center;
+  transform: scale(1.02);
+}
+
+.action > svg {
+  margin-right: 1rem;
+}
+
+@media (max-width: 18.5rem) {
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (hover: hover) {
+  .action:hover {
+    opacity: 0.6;
+  }
+  .counter > div:hover svg use {
+    fill: hsl(26, 91%, 71%);
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .container {
+    max-width: 28rem;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-bottom: 2.2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .prices {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+    margin-bottom: 2.4rem;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .buttons > :first-child {
+    width: 36%;
+  }
+  .buttons > :last-child {
+    width: 64%;
+  }
+}
